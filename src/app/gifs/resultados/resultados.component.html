@@ -1,35 +1,10 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
-<div class="col">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Card title</h6>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+  <div class="col animate__animated animate__fadeIn" *ngFor="let gif of results">
+    <div class="card">
+      <img [src]="gif.images.downsized_medium.url" class="card-img-top" [alt]="gif.title" />
+      <div class="card-body">
+        <h6 class="card-title">{{ gif.title }}</h6>
+      </div>
     </div>
   </div>
-</div>
-<div class="col">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Card title</h6>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Card title</h6>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h6 class="card-title">Card title</h6>
-    </div>
-  </div>
-</div>
-
 </div>
